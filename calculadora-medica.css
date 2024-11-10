@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+body {
+    background-image: url(IMAGENES/FONDO-DE-LA-APP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f9;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    
+}
+
+
+  /* se maneja el texto del titulo "Calculando Infusiones" */
+h1 {
+    font-size: 2rem;
+    position: absolute;
+    margin-bottom: 10px;
+    color: #ffffff;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* se maneja toda el container de medicamentos*/
+.card-container {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: 10px;
+    margin: 10px;
+}
+
+/* se maneja todas las cards de medicamentos*/
+.card {
+    background: #035785;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 20%;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+  /* se maneja la card y el container de la Bascula */
+.container5 {
+    display: flex;
+    gap: 20px; /* Espacio entre las tarjetas */
+    border-radius: 60px;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    position: 20px;
+    transition: opacity 0.5s;
+    opacity: 0.9; /* Añade una transición suave */
+
+}
+
+/* Se maneja la carta de la bascula*/
+.card5 {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(252, 5, 5, 0.2);
+    padding: 10px;
+    width: 55%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 13px;
+    color: #035785;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centrado en pantallas grandes */
+}
+
+  /* Estilos para dispositivos móviles */
+
+
+
+.card1:hover {
+    transform: scale(1.10);
+}
+
+  /* Titulos de las cards de los Médicamentos */
+.card h2 {
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+.card .form-group {
+    margin-bottom: 10px;
+    
+}
+
+.card label {
+    font-weight: bold;
+    display: block;
+}
+
+.card input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5PX;
+    
+}
+
+  /* maneja los textos de ratmin ratmax y ratactual */
+.card .result {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #eee8e8;
+}
+
+
+/* Maneja el Botón Calcular*/
+button {
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: #004799;
+}

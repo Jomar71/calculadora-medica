@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Infunsiones</title>
+    <link rel="stylesheet" href="calculadora-medica.css">
+    <script src="calculadora-medica.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+    
+    <h1>Calculando Infusión de Medicamentos</h1>
+
+    <div id="card-container" class="card-container"></div>
+
+    <!-- Contenedor de las tarjetas de medicamentos -->
+    <div id="card-container-conjunto1" class="card-container">
+        <!-- Las tarjetas se crearán con JavaScript -->
+    </div>
+
+        <!-- Contenedor de las tarjetas de medicamentos -->
+        <div id="card-container-conjunto2" class="card-container">
+        <!-- Las tarjetas se crearán con JavaScript -->
+        </div>
+    
+        <!-- Contenedor de las tarjetas de medicamentos -->
+        <div id="card-container-conjunto3" class="card-container">
+        <!-- Las tarjetas se crearán con JavaScript -->
+        </div>
+
+        <!-- Contenedor de las tarjetas de medicamentos -->
+        <div id="card-container-conjunto4" class="card-container">
+        <!-- Las tarjetas se crearán con JavaScript -->
+        </div>
+
+        <!-- Contenedor de las tarjetas de medicamentos -->
+        <div id="card-container-conjunto5" class="card-container">
+        <!-- Las tarjetas se crearán con JavaScript -->
+        </div>
+
+    </div>
+
+<!-- Tarjeta de entrada para Peso del Paciente y botón de cálculo -->
+<div class="container5">
+    <div class="card5">
+    <h2>Báscula</h2>
+    <div class="form-group">
+        <label>Peso del Paciente (kg):</label>
+        <input type="number" id="pesoPaciente" placeholder="Ingrese peso">
+    </div>
+    <button onclick="calcularParaTodos()">Calcular </button>
+</div>
+
+<script src="app.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
