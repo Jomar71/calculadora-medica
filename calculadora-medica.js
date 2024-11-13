@@ -1,21 +1,21 @@
 // Datos de los medicamentos 
 const medicamentos = {
     conjunto1:  {
-        midazolam: { nombre: "Midazolam", dosisMin: 0.05, dosisMax: 0.2, unidad: 'mg/kg/h', k: 1 },
+        midazolam: { nombre: "Midazolam", dosisMin: 0.1, dosisMax: 0.4, unidad: 'mg/kg/h', k: 1 },
         propofol: { nombre: "Propofol", dosisMin: 1, dosisMax: 4, unidad: 'mg/kg/h', k: 10 },
-        dexmedetomidina: { nombre: "Dexmedetomidina", dosisMin: 0.2, dosisMax: 1.4, unidad: 'mcg/kg/min', k: 4 },
+        dexmedetomidina: { nombre: "Dexmedetomidina", dosisMin: 0.3, dosisMax: 1.2, unidad: 'mcg/kg/min', k: 4 },
         fentanil: { nombre: "Fentanil", dosisMin: 1, dosisMax: 3, unidad: 'mcg/kg/min', k: 10 },
-        rocuronio: { nombre: "Rocuronio", dosisMin: 0.3, dosisMax: 0.7, unidad: 'mcg/kg/min', k: 1 },
+        rocuronio: { nombre: "Rocuronio", dosisMin: 0.2, dosisMax: 1.7, unidad: 'mcg/kg/min', k: 1 },
     },
     conjunto2: {
         remifentanil: { nombre: "Remifentanil", dosisMin: 0.05, dosisMax: 0.2, unidad: 'mcg/kg/min', k: 20 },
-        norepinefrina: { nombre: "Norepinefrina", dosisMin: 0.1, dosisMax: 0.4, unidad: 'mg/kg/h', k: 64 },
+        norepinefrina: { nombre: "Norepinefrina", dosisMin: 0.1, dosisMax: 0.5, unidad: 'mg/kg/h', k: 65 },
         nitroprusiato: { nombre: "Nitroprusiato", dosisMin: 0.3, dosisMax: 2, unidad: 'mg/kg/h', k: 400 },
         milrinone: { nombre: "Milrinone", dosisMin: 0.375, dosisMax: 0.75, unidad: 'mcg/kg/min', k: 100 },
-        levosimendan: { nombre: "Levosimendan", dosisMin: 0.05, dosisMax: 0.2, unidad: 'mcg/kg/min', k: 100 },
+        levosimendan: { nombre: "Levosimendan", dosisMin: 0.1, dosisMax: 0.2, unidad: 'mcg/kg/min', k: 125 },
     },
     conjunto3: {
-        ketamina: { nombre: "Ketamina", dosisMin: 5, dosisMax: 15, unidad: 'mcg/kg/min', k: 5 },
+        ketamina: { nombre: "Ketamina", dosisMin: 5, dosisMax: 15, unidad: 'mcg/kg/min', k: 2.5 },
         cisatracurio: { nombre: "Cisatracurio", dosisMin: 1, dosisMax: 4, unidad: 'mcg/kg/min', k: 1 },
         adrenalina: { nombre: "Adrenalina", dosisMin: 0.05, dosisMax: 0.2, unidad: 'mcg/kg/min', k: 1 },
         dobutamina: { nombre: "Dobutamina", dosisMin: 2.5, dosisMax: 5, unidad: 'mcg/kg/min', k: 2 },
@@ -26,7 +26,7 @@ const medicamentos = {
 
     conjunto5: {
         vasopresina: { nombre: "Vasopresina", dosisMin: 0.01, dosisMax: 0.04, unidad: 'mcg/kg/min', k: 0.2 },
-        labetalol: { nombre: "Labetalol", dosisMin: 1, dosisMax: 2, unidad: 'mcg/kg/min', k: 1 },
+        labetalol: { nombre: "Labetalol", dosisMin: 0.5, dosisMax: 2, unidad: 'mcg/kg/min', k: 1 },
     },
 };
 
