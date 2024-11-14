@@ -5,7 +5,7 @@ const medicamentos = {
         propofol: { nombre: "Propofol", dosisMin: 1, dosisMax: 4, unidad: 'mg/kg/h', k: 10 },
         dexmedetomidina: { nombre: "Dexmedetomidina", dosisMin: 0.3, dosisMax: 1.2, unidad: 'mcg/kg/min', k: 4 },
         fentanil: { nombre: "Fentanil", dosisMin: 1, dosisMax: 3, unidad: 'mcg/kg/min', k: 10 },
-        rocuronio: { nombre: "Rocuronio", dosisMin: 0.2, dosisMax: 1.7, unidad: 'mcg/kg/min', k: 1 },
+        rocuronio: { nombre: "Rocuronio", dosisMin: 0.2, dosisMax: 0.7, unidad: 'mcg/kg/min', k: 1 },
     },
     conjunto2: {
         remifentanil: { nombre: "Remifentanil", dosisMin: 0.05, dosisMax: 0.2, unidad: 'mcg/kg/min', k: 20 },
@@ -49,7 +49,7 @@ function crearTarjetas() {
                 <div class="result">
                     <p><strong>Rata Mínima:</strong> <span id="rataMin-${conjuntoKey}-${medKey}">-</span> ${med.unidad}</p>
                     <p><strong>Rata Máxima:</strong> <span id="rataMax-${conjuntoKey}-${medKey}">-</span> ${med.unidad}</p>
-                    <p><strong>Rata Actual:</strong> <span id="rataActual-${conjuntoKey}-${medKey}">-</span> ${med.unidad}</p>
+                    
                 </div>
             `;
   
@@ -112,7 +112,7 @@ function calcularParaTodos() {
             // Actualiza el DOM con los valores calculados
             document.getElementById(`rataMin-${conjuntoKey}-${medKey}`).innerText = rataMin.toFixed(1);
             document.getElementById(`rataMax-${conjuntoKey}-${medKey}`).innerText = rataMax.toFixed(1);
-            document.getElementById(`rataActual-${conjuntoKey}-${medKey}`).innerText = rataActual.toFixed(1);
+            
         }
     }
 }
